@@ -55,7 +55,7 @@ class ssh::server {
   # If root login is permitted, then the root group granted access.
   $permitrootlogin = $ssh::server::config::permitrootlogin
 
-  if $permitrootlogin != 'no' {
-    ssh::allowgroup { $ssh::root_group: }
-  }
+  # if $permitrootlogin != 'no' {
+  #   ssh::allowgroup { $ssh::root_group: }
+  # }
 }
